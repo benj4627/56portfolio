@@ -91,6 +91,11 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    background-color: var(--beigeBackground); 
+    padding: 1rem; /
 }
 
 .navLinks ul {
@@ -197,12 +202,13 @@ button {
 /* min profil section */
 
 .minProfilContainer {
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
     gap: var(--largeSpacing);
     align-items: baseline;
+    position: relative;
 }
 
 #minProfilId {
@@ -214,7 +220,7 @@ button {
 
 .greenFullWidth {
     background-color: var(--greenSecondary);
-    width: 100vw;
+    max-width: 100vw;
 }
 
 .hvemErJeg {
@@ -267,6 +273,23 @@ button {
     color: var(--greenPrimary);
 }
 
+.arrowUp {
+    position: absolute;
+    top: 95%;
+    left: 51%;
+    transform: translate(-95%, -51%);
+}
+
+.arrowUp i {
+    color: var(--red);
+    font-size: 3rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUp i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
 /* fade in */
 .slideinAnim {
     opacity: 0; 
@@ -277,4 +300,12 @@ button {
 .animationVisible {
     opacity: 1; 
     transform: translateY(0); 
+}
+
+/* cases */
+#casesId {
+    font-size: 2.5rem;
+    text-align: center;
+    
+    padding-top: 5rem;
 }
