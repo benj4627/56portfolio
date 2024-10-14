@@ -1,3 +1,18 @@
+/* Fonts and vars */
+:root {
+    --beigeBackground: FFF8F2;
+    --greenPrimary: #335249;
+    --greenSecondary: #DEF1E2;
+    --red: #701D13;
+    --black: #191919;
+    --borderRadius: 25px; 
+    --standardSpacing: 1em; 
+    --largeSpacing: 2em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 /* reset template */
 * {
     box-sizing: border-box;
@@ -8,6 +23,9 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--beigeBackground);
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -29,6 +47,7 @@ p {
     max-width: 75ch;
     margin-bottom: 2rem;
     line-height: 1.5rem;
+    font-family: "Poppins", sans-serif;
 }
 
 img,
@@ -40,8 +59,114 @@ video {
     height: auto; 
 }
 
-button,
 input,
 form {
     font: inherit;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+h2,
+h3,
+button {
+    font-family: "Questrial", sans-serif;
+}
+
+.centerContent {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navContainer svg {
+    height: 7vh;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10em;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    position: relative; 
+    padding-bottom: 5px; 
+    color: var(--black);
+    transition: .3s ease-in-out;
+}
+
+.navLinks a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--black); 
+    transition: 0.3s ease;
+    transform: translateX(-50%); 
+}
+
+.navLinks a:hover {
+    font-size: 1.05rem;
+}
+
+.navLinks a:hover::after {
+    width: 100%;
+}
+
+/* hero section */
+.heroContainer {
+    margin-top: 5rem;
+}
+.h1Content {
+    font-size: 10em;
+    display: flex;
+    gap: 5rem;
+    letter-spacing: .8rem;
+    font-weight: 1000;
+}
+
+.greenTexth1 {
+    color: var(--greenPrimary);
+}
+
+.h2Content {
+    display: flex;
+    gap: 2rem;
+    font-size: 8em;
+    margin-bottom: 2rem;
+}
+
+.h2Green {
+    color: var(--greenPrimary);
+}
+
+.h3Content {
+    display: flex;
+    font-size: 5em;
+}
+
+.arrowDown {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-95%, -50%);
+}
+
+.arrowDown i {
+    color: var(--red);
+    font-size: 3rem;
 }
