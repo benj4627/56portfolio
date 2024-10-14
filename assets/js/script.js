@@ -1,5 +1,5 @@
 let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer");
-let scrollThreshold = 250;
+let scrollThreshold = 450;
 let parallaxText = document.querySelector('.h1Content');
 
 window.addEventListener('scroll', function() {
