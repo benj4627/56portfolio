@@ -580,7 +580,9 @@ footer i {
 }
 
 /* blå festival underside case */
-
+.heroTextContent h1 {
+    font-size: 4em;
+}
 
 .heroTextContent ul {
     display: flex;
@@ -588,6 +590,7 @@ footer i {
     justify-content: center;
     width: fit-content;
     align-items: center;
+    margin-top: var(--largeSpacing);
     margin-bottom: var(--largeSpacing);
     background-color: var(--greenSecondary);
     padding: 1rem 1.5rem;
@@ -610,8 +613,32 @@ footer i {
     margin-right: .5rem;
 }
 
+.heroBtnCase {
+    margin-right: var(--largeSpacing);
+}
+
+.heroImgCase {
+    max-width: 1350;
+    margin: 0 auto;
+}
+
 .heroImgCase img {
     height: auto;
-    width: 70vw;
+    width: 48vw;
     border-radius: 20px;
+    position: absolute;
+    left: 45%;
+    top: 17%
+} 
+
+.heroCaseContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--standardSpacing);
+    position: relative;
+}
+
+.heroTextContent p {
+    max-width: 50ch;
 }
