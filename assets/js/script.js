@@ -3,9 +3,12 @@ let scrollThreshold = 250;
 let parallaxText = document.querySelector('.h1Content');
 
 
+
+
 window.addEventListener('scroll', function() {
     // fanger scroll positionen, og giver det til det valgte HTML element
     let scrollPosition = window.scrollY;
+    
     
     //flytter img en smule, når brugeren scroller ned. Tildeler CSS styling med translate y og en værdi dertil 
     parallaxText.style.transform = 'translateY(' + scrollPosition * 0.60 + 'px)';
@@ -26,5 +29,5 @@ function toggleClassScroll() {
   //kalder function når siden loader, for at tjekke scroll position
   toggleClassScroll();
 
-  
+
 
