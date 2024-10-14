@@ -584,6 +584,10 @@ footer i {
     font-size: 4em;
 }
 
+.heroSectionTitle {
+    color: var(--greenPrimary);
+}
+
 .heroTextContent ul {
     display: flex;
     gap: 4rem;
