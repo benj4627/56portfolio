@@ -201,7 +201,7 @@ button a:hover {
 
 .arrowDown i {
     color: var(--red);
-    font-size: 3rem;
+    font-size: 2rem;
     transition: transform 0.5s ease;
 }
 
@@ -304,7 +304,7 @@ button a:hover {
 
 .arrowUp i {
     color: var(--red);
-    font-size: 3rem;
+    font-size: 2rem;
     transition: transform 0.5s ease;
 }
 
@@ -343,6 +343,7 @@ button a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 10rem;
     padding-bottom: var(--largeSpacing);
 }
 
@@ -400,17 +401,102 @@ button a:hover {
 
 .arrowUpCase {
     position: absolute;
-    top: 102%;
+    top: 103%;
     left: 51%;
     transform: translate(-102%, -51%);
 }
 
 .arrowUpCase i {
     color: var(--red);
-    font-size: 3rem;
+    font-size: 2rem;
     transition: transform 0.5s ease;
 }
 
 .arrowUpCase i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
+/* Kontaktform med vue */
+
+.kontaktContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+#kontaktId {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contactForm {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    background-color: #fbeadc;
+    padding: 20px;
+    padding-bottom: 6rem;
+    border-radius: 10px;
+    width: 40vw;
+    margin-top: 4rem;
+    position: relative;
+  }
+
+  .contactForm label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
+
+  .contactForm textarea {
+    height: 80px;
+    resize: none;
+  }
+
+  .contactForm button {
+    padding: 10px;
+    width: 30%;
+    color: var(--beigeBackground);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .contactForm button:hover {
+    color: var(--red);
+  }
+
+.arrowUpKontakt{
+    position: absolute;
+    top: 95%;
+    left: 51%;
+    transform: translate(-102%, -51%);
+}
+
+.arrowUpKontakt i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUpKontakt i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }

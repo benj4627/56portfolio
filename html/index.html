@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <script src="../assets/js/script.js" defer></script>
+    <script src="https://unpkg.com/vue@3" defer></script>
   </head>
 
   <body>
@@ -31,7 +32,7 @@
           <ul>
             <li><a href="#minProfilId">MIN PROFIL</a></li>
             <li><a href="#casesId">CASES</a></li>
-            <li><a href="">KONTAKT</a></li>
+            <li><a href="#kontaktId">KONTAKT</a></li>
           </ul>
         </div>
       </div>
@@ -303,6 +304,70 @@
           </a>
         </div>
       </section>
+
+      <div class="greenFullWidth">
+        <h3 id="kontaktId">KONTAKT</h3>
+        <section class="kontaktContainer centerContent">
+          <div id="app">
+            <div class="contactForm">
+              <form @submit.prevent="submitForm">
+                <label for="name">NAVN:</label>
+                <input type="text" id="name" v-model="formData.name" required />
+
+                <label for="email">E-MAIL:</label>
+                <input
+                  type="email"
+                  id="email"
+                  v-model="formData.email"
+                  required
+                />
+
+                <label for="message">BESKED:</label>
+                <textarea
+                  id="message"
+                  v-model="formData.message"
+                  required
+                ></textarea>
+                <button type="submit">Kontakt</button>
+              </form>
+            </div>
+          </div>
+         
+          <script defer>
+            let app = Vue.createApp({
+              data() {
+                //sætter formen til at være tom ved pageload
+                return {
+                  formData: {
+                    name: "",
+                    email: "",
+                    message: "",
+                  },
+                };
+              },
+              methods: {
+                submitForm() {
+                  //alert til form
+                  alert(
+                    `Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`
+                  );
+                  // Nulstiller form efter den er sendt
+                  this.formData.name = "";
+                  this.formData.email = "";
+                  this.formData.message = "";
+                },
+              },
+            });
+
+            app.mount("#app");
+          </script>
+          <div class="arrowUpKontakt">
+            <a href="#toTop">
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer></footer>
