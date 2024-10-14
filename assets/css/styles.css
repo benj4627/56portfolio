@@ -1,0 +1,47 @@
+/* reset template */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+    font-weight: normal;
+}
+
+p {
+    text-wrap: pretty; 
+    max-width: 75ch;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    display: block; 
+    height: auto; 
+}
+
+button,
+input,
+form {
+    font: inherit;
+}
