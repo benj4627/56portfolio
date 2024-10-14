@@ -500,3 +500,63 @@ button a:hover {
 .arrowUpKontakt i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }
+/* footer */
+footer {
+    padding: 3rem 0;
+}
+footer h4 {
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    margin: 1rem 0;
+    padding-top: 2rem;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer i {
+    color: var(--red);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerVærdier li {
+    width: 40ch;
+    margin: 1rem 0;
+}
+
+.footerVærdier i {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+.kontaktInfoFooter li {
+    margin-bottom: 2rem;
+}
+
+.kontaktInfoFooter i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.socialsFooter {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialsFooter i {
+    font-size: 2.5rem;
+    color: var(--red);
+    transition: .3s ease-in-out;
+}
+
+.socialsFooter i:hover {
+    transform: scale(120%);
+}

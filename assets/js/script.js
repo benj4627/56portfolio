@@ -1,9 +1,6 @@
-let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner");
+let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer");
 let scrollThreshold = 250;
 let parallaxText = document.querySelector('.h1Content');
-
-
-
 
 window.addEventListener('scroll', function() {
     // fanger scroll positionen, og giver det til det valgte HTML element
