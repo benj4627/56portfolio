@@ -1,8 +1,8 @@
 /* Fonts and vars */
 :root {
-    --beigeBackground: FFF8F2;
+    --beigeBackground: #FFF8F2;
     --greenPrimary: #335249;
-    --greenSecondary: #DEF1E2;
+    --greenSecondary: #d9e6dc;
     --red: #701D13;
     --black: #191919;
     --borderRadius: 25px; 
@@ -19,7 +19,9 @@
     margin: 0;
     padding: 0;
     font: inherit;
+    scroll-behavior: smooth;
 }
+
 
 body {
     min-height: 100vh;
@@ -68,10 +70,12 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
 }
+
 h2,
 h3,
 button {
     font-family: "Questrial", sans-serif;
+    letter-spacing: .7rem;
 }
 
 .centerContent {
@@ -114,13 +118,14 @@ button {
     bottom: 0;
     width: 0;
     height: 2px; 
-    background-color: var(--black); 
+    background-color: var(--red); 
     transition: 0.3s ease;
     transform: translateX(-50%); 
 }
 
 .navLinks a:hover {
     font-size: 1.05rem;
+    color: var(--red);
 }
 
 .navLinks a:hover::after {
@@ -130,6 +135,7 @@ button {
 /* hero section */
 .heroContainer {
     margin-top: 3rem;
+    margin-bottom: 10em;
 }
 .h1Content {
     font-size: 10em;
@@ -162,11 +168,113 @@ button {
 .arrowDown {
     position: absolute;
     top: 95%;
-    left: 50%;
-    transform: translate(-95%, -50%);
+    left: 51%;
+    transform: translate(-95%, -51%);
 }
 
 .arrowDown i {
     color: var(--red);
     font-size: 3rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowDown i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
+@keyframes bounceUpAndDown {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+/* min profil section */
+
+.minProfilContainer {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--largeSpacing);
+    align-items: baseline;
+}
+
+#minProfilId {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: var(--greenSecondary);
+    padding-top: 5rem;
+}
+
+.greenFullWidth {
+    background-color: var(--greenSecondary);
+    width: 100vw;
+}
+
+.hvemErJeg {
+    margin-top: var(--largeSpacing);
+}
+
+.hvemErJeg h4, .mineEvner h4 {
+    font-size: 1.8rem; 
+    font-family: "Questrial", sans-serif;
+    letter-spacing: .3rem;
+    margin-bottom: var(--largeSpacing);
+}
+
+.hvemErJeg p {
+    max-width: 45ch;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.mineEvnerBeigeDiv {
+    background-color: var(--beigeBackground);
+    padding: var(--standardSpacing);
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: var(--largeSpacing);
+}
+
+.mineEvnerBeigeDiv div {
+    display: flex;
+    width: 100%; 
+    min-width: 30vw; 
+    gap: var(--standardSpacing);
+    justify-content: left;
+    align-items: center;
+    padding: 1rem 4rem;
+    
+}
+
+.mineEvnerBeigeDiv svg {
+    flex-shrink: 0;
+    height: 100%;
+    max-height: 80%; 
+}
+
+.mineEvner p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--greenPrimary);
+}
+
+/* fade in */
+.slideinAnim {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+.animationVisible {
+    opacity: 1; 
+    transform: translateY(0); 
 }
