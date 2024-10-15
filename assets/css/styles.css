@@ -780,3 +780,81 @@ footer i {
     height: auto;
     max-width: 65vw;
 }
+
+.specificCaseImageContentPersona img {
+    border-radius: var(--borderRadius);
+    height: auto;
+    max-width: 45vw;
+}
+
+.specificCaseImageContentUI img {
+    border-radius: var(--borderRadius);
+    height: auto;
+    max-width: 75vw;
+}
+
+.specificCaseImageContentTest img {
+    border-radius: var(--borderRadius);
+    height: auto;
+    max-width: 55vw;
+}
+
+.specificCaseImageCode {
+    display: flex;
+    justify-content: space-between;
+    margin: unset;
+}
+
+.specificCaseImageCode img {
+    border-radius: var(--borderRadius);
+    height: auto;
+    max-width: 70vw;
+}
+
+.specificCaseTextContentCode h3 {
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--standardSpacing);
+}
+
+.specificCaseTextContentCode p {
+    max-width: 70ch;
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+
+.specificCaseTextContentCode {
+    gap: 1rem;
+}
+
+.specificCaseTextContentCode img {
+    border-radius: var(--borderRadius);
+    max-height: 38vh;
+    width: auto;
+}
+
+.specificCaseTextContentCode img {
+    border-radius: var(--borderRadius);
+    max-height: 55vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+} 
+
+.arrowUpCase {
+    position: absolute;
+    top: 1000%;
+    left: 49%;
+    transform: translate(-0%, -51%);
+}
+
+.arrowUpCase i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUpCase i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}

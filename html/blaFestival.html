@@ -128,10 +128,17 @@
           <div class="specificCaseTextContent" id="toUX">
             <h3 class="specificCaseTitle">UX Research</h3>
             <p>
-                Med vores segmentering ligger vi herefter fundamentet for vores interviewguide til de nødvendige kvalitative interviews. Formålet er at undersøge hvad der motiverer vores brugere, for at deltage i festivaler og koncerter.
+              Med vores segmentering ligger vi herefter fundamentet for vores
+              interviewguide til de nødvendige kvalitative interviews. Formålet
+              er at undersøge hvad der motiverer vores brugere, for at deltage i
+              festivaler og koncerter.
             </p>
             <p>
-                Herefter udfører vi flere interviews, for at sikre at vi har en passende mængde data at arbejde videre fra. Efter overstået interviews, koder vi dataene efter tema og undersøger alle interviews for fælles temaer. Disse bliver understøttet med relevante citater. 
+              Herefter udfører vi flere interviews, for at sikre at vi har en
+              passende mængde data at arbejde videre fra. Efter overstået
+              interviews, koder vi dataene efter tema og undersøger alle
+              interviews for fælles temaer. Disse bliver understøttet med
+              relevante citater.
             </p>
           </div>
           <div class="specificCaseImageContentUX">
@@ -146,90 +153,132 @@
           <div class="specificCaseTextContent" id="toPeronas">
             <h3 class="specificCaseTitle">Personas</h3>
             <p>
-              I forbindelse med opsætning af kodemiljøet, klargøres CSS
-              dokumentet med et reset af base styling for at undgå konflikter
-              med min egen styling, CSS-variabler til b.la. farver, spacing og
-              border radius sættes op, fonts importeres og til sidst, basal
-              styling af typografi, images og buttons.
+              Vi baserer vores personas på data fra vores tidligere
+              undersøgelser, og vores segmentering og på den måde sikrer vi at
+              vores personas repræsentere vores brugergruppe. Vi skaber en
+              persona med henblik på nemmere at kunne sætte os i vores
+              brugergruppes sted, og dermed forstå deres behov og motivation.
             </p>
             <p>
-              CSS-variablerne er med til at sikre konsistens igennem projektet,
-              og hvis der skulle produceres en større grænseflade, sikre
-              variablerne at det er nemt at ændre f.eks. farver, spacing eller
-              border radius i hele CSS dokumentet på en gang. Det bidrager i
-              sidste ende til effektiv arbejdsproces igennem hele projektet.
-            </p>
-            <p>
-              Efter det nødvendige CSS er opsat, bliver en enkelt media query
-              programmeret for at sikre at grænsefladen vises korrekt på en
-              mobil viewport. Her er målet at få komprimeret container med
-              indhold til en bredde hvor det passer til en mindre skærm, og
-              bliver lavet primært med en blanding af flex direction og grid.
-              Til sidst er der opsat nødvendige :hover effekter på relevante
-              interaktive elementer, for at fremme brugervenligeheden, ved at
-              give tydelig visuel feedback når brugeren interagere med
-              grænsefladen.
+              Derudover understøtter brugen af personas, hvorfor forskellige
+              designvalg bliver taget senere i processen, da de bliver taget med
+              brugernes behov i fokus. For at hjælpes os med at holde fokus på
+              hvad der er vigtigt i grænsefladen, laver vi situationer og
+              scenarier til vores personas, som demonstrerer hvordan brugerne
+              interagerer med webappen. Disse understøtter yderligere muligheden
+              for et empatisk design.
             </p>
           </div>
-          <div class="specificCaseImageContentCSS">
+          <div class="specificCaseImageContentPersona">
             <img
-              src="../assets/images/notificationsCSSVarsandREset.png"
-              alt="Billede af CSS variables og reset"
-            />
-            <img
-              src="../assets/images/notificationCSSMediaQuery.png"
-              alt="Billede media queries"
+              src="../assets/images/personaSofie.png"
+              alt="Billede af Persona"
             />
           </div>
         </article>
 
         <article class="specifikCaseContentContainer">
-          <div class="specificCaseTextContent">
-            <h3 class="specificCaseTitle" id="toJs">JavaScript</h3>
+          <div class="specificCaseTextContent" id="toUI">
+            <h3 class="specificCaseTitle">UI Design</h3>
             <p>
-              For at tilføje funktionalitet til siden, bruges vanilla
-              JavaScript. Først fanges de relevante HTML elementer fra DOM’en
-              med document.querySelector og querySelectorAll, begge skal bruges
-              fordi i nogle tilfælde er det nødvendigt at ramme flere HTML
-              elementer med den samme class, og loope igennem dem med forEach.
-              Hvor det ikke er intentionen at bruge flere elemtenter på samme
-              tid, er det querySelector tilstrækkelig.
+              Vi starter hver især med at tegne skitser på papir. Herefter
+              sammenligner vi vores ideer og itererer indtil vi er tilfredse med
+              resultatet. Ud fra det endelige resultat af vores iterative proces
+              med skitserne, oversætter vi dem til wireframes med Adobe Xd. Nu
+              fokuserer vi udelukkende på layout, navigation og wayfinding, og
+              derfor er der ingen farver, billeder eller andet indhold, siden
+              det er unødvendigt for at vores wireframes opfylder deres krav i
+              denne del af designprocessen
             </p>
             <p>
-              Den første funktions formål er at loope igennem de ulæste
-              notifikationer når buttonEl trykkes, opdatere stylingen, fjerne de
-              røde prikker ved at tilføje klassen hidden, og optarere
-              tekstindholdet i numberEl, for korrekt at afspejle mængden af
-              ulæst notifiaktioner.
+              Når samtlige wireframes er færdige, indsætter vi vores indhold,
+              farver og anden styling, og skaber på den måde et high fidelity
+              mockup, der fungerer som vores prototype.
             </p>
+          </div>
+          <div class="specificCaseImageContentUI">
             <img
-              src="../assets/images/notificationsJShverEnkeltMarkAsRead.png"
-              alt="funktion til mark as read"
+              src="../assets/images/uiDesignBlåfestival.png"
+              alt="Billede af wireframes og mockup"
             />
+          </div>
+        </article>
+
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContent" id="toTest">
+            <h3 class="specificCaseTitle">Think Aloud Test</h3>
             <p>
-              Den sidste del af JavaScriptet tilføjer en eventListener til hver
-              notifikation, så man har mulighed for at markere enkelte
-              notifikationer som ”læst” ved at klikke på dem. Når en
-              notifikation klikkes, ændres den styling til ”læst”, altså den blå
-              baggrundfarve og røde prik fjernes. Derefter tæller koden igen
-              hvor mange ulæste notifikationer der er, og opdaterer antallet i
-              ”notifications” i toppen af siden.
+              Vi bruger vores prototype til at udføre think aloud tests, hvor
+              testens scope er at undersøge primært informationsarkitekturen,
+              navigation, wayfinding og brugervenligheed. Testene, hjælper os
+              med at identificere eventuelle brugerproblemer og samtidig giver
+              det os et indblik i brugernes tankegang i forbindelse med
+              produktet.
             </p>
             <p>
-              Padding klassen er hvad der adskiller de læste og ulæste
-              notifikationer, og gør at det er muligt at opdatere tælleren
-              korrekt. Ved at tilføje klassen padding notifikationer, bliver de
-              ikke længere talt med i ulæste notifikationer.
-              Document.querySelectorAll('.notification:not(.padding)') vælger
-              altså kun de notifikationer, som ikke har klassen padding, hvilket
-              gør at der kan holdes styr på, hvor mange notifikationer der
-              stadig er ulæste.
+              Vi udarbejder et testscript med passende opgaver til brugerne, og
+              udfører derefter fire tests, hvor vi hver især agere som både
+              moderator og observatør på samme tid. Ud fra resultaterne laver vi
+              test rapport for at undersøge alvorligheden af eventuelle fejl.
+              Til sidst opsummerer vi, og laver de nødvendige rettelser i vores
+              prototype, hvilket resulterer i en iterativ proces.
+            </p>
+          </div>
+          <div class="specificCaseImageContentTest">
+            <img
+              src="../assets/images/ThinkAloudRapport.png"
+              alt="Billede af wireframes og mockup"
+            />
+            <img
+              src="../assets/images/ThinkAloudIteration.png"
+              alt="Billede af wireframes og mockup"
+            />
+          </div>
+        </article>
+
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContentCode">
+            <h3 class="specificCaseTitle" id="toCode">Realisering</h3>
+            <p>
+              Vi implementerer vores løsning via HTML, CSS og JavaScript. Først
+              sætter vi vores HTML struktur op, og på den måde sikrer at
+              grænsefladens indhold for den rigtige placering ift.
+              tilgængelighed. Derefter definerer vi grundlæggende properties i
+              vores CSS-dokument, bl.a. variabler til farver, margin, padding og
+              border radius. Det gør vi for at sikre konsistens mellem siderne,
+              og hvis der eventuelt er ting som skal styles anderledes, er det
+              nemt at ændre på en gang.
+            </p>
+
+            <img
+              src="../assets/images/cssBlaREsetOgVar.png"
+              alt="funktion til filtrering"
+            />
+
+            <p>
+              Efter styling, implementerer vi den JavaScript funktionalitet vi
+              har behov for. I dette projekt udnyttede vi JavaScript til at
+              tilføje funktionalitet til vores filtrerings knap.
+            </p>
+
+            <img
+              src="../assets/images/jsFiltreringBlaFestival.png"
+              alt="funktion til filtrering"
+            />
+
+            <p>
+              Derudover bruges window.location.href.includes for at de aktuelle
+              menupunkter er fyldt ud, på den underside man befinder sig på. Det
+              sidste vi gør, er at validere kode, for at sikre at produktet er
+              programmeret korrekt og så vidt muligt, efter best practices.
+              Siden vi udelukkende arbejder med en webapp til mobil, har vi i
+              første omgang ikke brugt tid på et responsivt design.
             </p>
           </div>
           <div class="specificCaseImageContent">
             <img
-              src="../assets/images/notificationsJSændreStylingOgAntalNotific.png"
-              alt="Funktion til at tildele styling"
+              src="../assets/images/jsWindowsHRref.png"
+              alt="Funktion til windowshref"
             />
           </div>
         </article>
@@ -238,27 +287,19 @@
           <div class="specificCaseTextContent">
             <h3 class="specificCaseTitle" id="toBegrænsinger">BEGRÆNSINGER</h3>
             <p>
-              Siden her skulle i teorien fungere som en del af en større
-              grænseflade. Dog er opgaven her begrænset til blot
-              notifikationssiden. CSS variabler er opsat, så hvis man skulle
-              udvide projektet, er det nemt at sikre konsistens på den måde.
-              Fordi siden her eksisterer alene så at sige, fører links altså
-              ikke videre til specifikke posts eller billeder i grænsefladen.
-              Derudover at opgaven begrænset til den udleverede styleguide, for
-              at slutresultatet kommer så tæt på den udleverede mockup, som
-              muligt.
-            </p>
-            <p>
-              Funktionaliteten kunne i det her tilfælde måske have været klaret
-              mere effektivt med Vue.js, og udnyttet brugen af data binding med
-              { ref }. Samtidig havde koden været en smule nemmere at
-              vedligeholde hvis projektet voksede i størrelse, fordi koden i
-              sidste ende ville være mere overskuelig.
+              Siden vi havde begrænset tid til designprocessen, er produktet et
+              resultat deraf. Havde der været yderligere tid tilgængeligt, ville
+              funktionaliteten leve op til det som prototypen visualiserer, og
+              derudover fungere responsivt til alle relevante viewports.
             </p>
           </div>
         </article>
+        <div class="arrowUpCase">
+          <a href="#toTop">
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+        </div>
       </section>
-
     </main>
 
     <footer class="centerContent">
