@@ -1,7 +1,24 @@
-let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer");
-let scrollThreshold = 450;
+let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer, .specifikCaseContentContainer");
+let scrollThreshold = 250;
 let parallaxText = document.querySelector('.h1Content');
 let lokalNav = document.querySelector('.lokalNavUl');
+let visibleSlideAnimEl = document.querySelectorAll(".heroCaseContentContainer, .arrowDownCase, .heroContainer");
+
+
+
+//function der tildeler active class til de valgte elementer
+function delayedAnimation() {
+    //Bruger forEach loop til at sætte et delay på 200ms, inden aktiv class tildeles til de valgte elementer
+    setTimeout(() => {
+      visibleSlideAnimEl.forEach(container => {
+        container.classList.add("animationVisibleUp");
+      });
+    }, 150);
+  }
+  
+  // Kalder funktionen når siden loades
+  delayedAnimation();
+
 
 
 window.addEventListener('scroll', function() {

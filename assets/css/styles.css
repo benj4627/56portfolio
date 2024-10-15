@@ -331,6 +331,17 @@ button a:hover {
 }
 
 /* fade in */
+.slideSideY {
+    opacity: 0; 
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
+    transform: translateY(100%); 
+}
+  
+  .animationVisibleUp {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+
 .slideinAnim {
     opacity: 0; 
     transition: opacity .5s ease-in-out, transform .5s ease-in-out; 
@@ -892,5 +903,114 @@ footer i {
 }
 
 .arrowUpCaseNoti i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
+/* The boulevard Tattoo */
+.heroImgCaseBoulevard {
+    max-width: 1350;
+    margin: 0 auto;
+}
+
+.heroImgCaseBoulevard img {
+    height: auto;
+    width: 38vw;
+    border-radius: 20px;
+    position: absolute;
+    left: 60%;
+    top: 17%
+} 
+
+.specificCaseImageContentTatMockup img {
+    border-radius: 10px; 
+    max-height: 110vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+} 
+
+.specificCaseImageContentTatMockup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.specificCaseImageContentTatHTML img {
+    border-radius: 10px; 
+    max-height: 70vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentTatCSS img {
+    border-radius: 10px; 
+    max-height: 40vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentTatJSFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--standardSpacing);
+}
+
+.specificCaseImageContentTatCSSFlex img {
+    border-radius: 10px; 
+    max-height: 30vw;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentMedia img {
+    border-radius: var(--borderRadius); 
+    max-height: 80vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentTatJS img {
+    border-radius: 10px; 
+    max-height: 65vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentTatJSFlex img {
+    border-radius: 10px; 
+    max-height: 42vh;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: var(--largeSpacing);
+}
+
+.specificCaseImageContentTatJSFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--standardSpacing);
+}
+
+.arrowUpCaseTat {
+    position: absolute;
+    top: 1293%;
+    left: 51%;
+    transform: translate(-102%, -51%);
+}
+
+.arrowUpCaseTat i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUpCaseTat i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }
