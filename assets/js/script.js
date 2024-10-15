@@ -61,4 +61,27 @@ function toggleLocalNav() {
 
 window.addEventListener('scroll', toggleLocalNav);
 
+//Animation til transitions
+//Vælge knapper til case studys
+document.querySelectorAll('.caseStudyButton').forEach(element => {
+    //tilføjer click event og prevent default for at sikre at knapperne ikke linker før animationen er udført
+    element.addEventListener('click', (event) => {
+        //  // Forhindrer standard handlingen af linket (f.eks. at navigere væk fra siden med det samme)
+        event.preventDefault();
+        // // Finder den nærmeste overordnede <a> (link) element og henter dens href-attribut,
+    // som indeholder URL'en, der skal navigeres til
+        const url = element.closest('a').href;
 
+        // Anime.js animation
+        anime({
+            targets: 'body',
+            opacity: [1, 0],
+            translateX: [0, -100],
+            duration: 600,
+            easing: 'easeOutSine',
+            complete: () => {
+                window.location.href = url;
+            }
+        });
+    });
+});

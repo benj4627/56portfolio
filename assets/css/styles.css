@@ -1014,3 +1014,8 @@ footer i {
 .arrowUpCaseTat i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }
+
+/* side transitions */
+body {
+    opacity: 1;
+}
