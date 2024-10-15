@@ -1,7 +1,8 @@
 let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer");
 let scrollThreshold = 450;
 let parallaxText = document.querySelector('.h1Content');
-const lokalNav = document.querySelector('.lokalNavUl');
+let lokalNav = document.querySelector('.lokalNavUl');
+
 
 window.addEventListener('scroll', function() {
     // fanger scroll positionen, og giver det til det valgte HTML element
@@ -41,7 +42,6 @@ function toggleLocalNav() {
     }
 }
 
-// Listen for scroll events
 window.addEventListener('scroll', toggleLocalNav);
 
 

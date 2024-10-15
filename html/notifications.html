@@ -20,7 +20,7 @@
   </head>
 
   <body>
-     <header id="toTop"> 
+    <header id="toTop">
       <div class="beigeFullWidth">
         <div class="navContainer centerContent">
           <div class="logoNav">
@@ -56,24 +56,27 @@
             notifikationsside er optimeret til at levere en ensartet oplevelse
             på tværs af både desktop og mobilvisning.
           </p>
-          <a
-            href="https://github.com/benj4627/48notificationsPage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button class="heroBtnCase">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>TIL GITHUB
-            </button></a
-          >
-          <a
-            href="https://mmd.ucn.dk/class/MMD-CSD-S23/10503164/frontEndProjects/48notificationsPage/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button class="heroBtnCase">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>SE DEMO
-            </button></a
-          >
+          <div class="heroBtnContainer">
+            <a
+              href="https://github.com/benj4627/48notificationsPage"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="heroBtnCase">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>TIL GITHUB
+              </button></a
+            >
+
+            <a
+              href="https://mmd.ucn.dk/class/MMD-CSD-S23/10503164/frontEndProjects/48notificationsPage/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button class="heroBtnCase">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>SE DEMO
+              </button></a
+            >
+          </div>
         </div>
         <div class="heroImgCase">
           <img
@@ -82,27 +85,181 @@
           />
         </div>
       </section>
-    </header> 
+    </header>
 
     <main>
-        
       <section class="oversigtLokalNavContainer centerContent">
         <div class="lokalNavUl">
-            <ul>
+          <ul>
             <h4>OVERSIGT</h4>
-              <li><a href="#"></a><i class="fa-brands fa-html5"></i>HTML</li>
-              <li><a href="#"></a><i class="fa-brands fa-css3"></i>CSS</li>
-              <li><a href="#"></a><i class="fa-brands fa-js"></i>JavaScript</li>
-              <li>
-                <a href="#"></a><i class="fa-solid fa-gears"></i>Begrænsninger
-              </li>
-            </ul>
-          </div>
+            <li>
+              <a href="#toHTML"><i class="fa-brands fa-html5"></i>HTML</a>
+            </li>
+            <li>
+              <a href="#toCSS"><i class="fa-brands fa-css3"></i>CSS</a>
+            </li>
+            <li>
+              <a href="#toJs"><i class="fa-brands fa-js"></i>JavaScript</a>
+            </li>
+            <li>
+              <a href="#toBegrænsinger"
+                ><i class="fa-solid fa-gears"></i>Begrænsninger</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
-      
-    </main>
 
-    <div class="margin">.DEN HER DIV SKAL SLETTES NÅR DU ER FÆRIDG</div>
+      <section class="caseAfsnitContainer centerContent">
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContent" id="toHTML">
+            <h3 class="specificCaseTitle">HTML</h3>
+            <p>
+              Som det første i processen, opsættes et kodemiljø, hvor den
+              korrekte typografi, HTML, CSS og JavaScript filer og andet basalt
+              styling bliver klargjort.
+            </p>
+            <p>
+              Herefter danner jeg mig et overblik og HTML strukturen af
+              projektet, og opdeler HTML dokumentet i de korrekte tags hhv.
+              body, main og de relevante sections. Var projektet en fuld
+              realiseret grænseflade, havde der også eksisteret header og
+              footer. Efterfølgende bliver en section færdigjort af gangen, både
+              med HTML og CSS. Nedenstående billeder viser både korrekt
+              semantisk HTML struktur, hvilket tilgodeser webtilgængelighed og
+              samtidig alt tekster og head sectionen, hvor title og meta
+              description også bidrager til tilgængelighed.
+            </p>
+          </div>
+          <div class="specificCaseImageContent">
+            <img
+              src="../assets/images/notificationHTMLsemantiskStruktur.png"
+              alt="Billede af semantisk struktur"
+            />
+            <img
+              src="../assets/images/notificationsAltText.png"
+              alt="Billede af alt text for teknisk SEO"
+            />
+          </div>
+        </article>
+
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContent" id="toCSS">
+            <h3 class="specificCaseTitle">CSS</h3>
+            <p>
+              I forbindelse med opsætning af kodemiljøet, klargøres CSS
+              dokumentet med et reset af base styling for at undgå konflikter
+              med min egen styling, CSS-variabler til b.la. farver, spacing og
+              border radius sættes op, fonts importeres og til sidst, basal
+              styling af typografi, images og buttons.
+            </p>
+            <p>
+              CSS-variablerne er med til at sikre konsistens igennem projektet,
+              og hvis der skulle produceres en større grænseflade, sikre
+              variablerne at det er nemt at ændre f.eks. farver, spacing eller
+              border radius i hele CSS dokumentet på en gang. Det bidrager i
+              sidste ende til effektiv arbejdsproces igennem hele projektet.
+            </p>
+            <p>
+              Efter det nødvendige CSS er opsat, bliver en enkelt media query
+              programmeret for at sikre at grænsefladen vises korrekt på en
+              mobil viewport. Her er målet at få komprimeret container med
+              indhold til en bredde hvor det passer til en mindre skærm, og
+              bliver lavet primært med en blanding af flex direction og grid.
+              Til sidst er der opsat nødvendige :hover effekter på relevante
+              interaktive elementer, for at fremme brugervenligeheden, ved at
+              give tydelig visuel feedback når brugeren interagere med
+              grænsefladen.
+            </p>
+          </div>
+          <div class="specificCaseImageContentCSS">
+            <img
+              src="../assets/images/notificationsCSSVarsandREset.png"
+              alt="Billede af CSS variables og reset"
+            />
+            <img
+              src="../assets/images/notificationCSSMediaQuery.png"
+              alt="Billede media queries"
+            />
+          </div>
+        </article>
+
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContent">
+            <h3 class="specificCaseTitle" id="toJs">JavaScript</h3>
+            <p>
+              For at tilføje funktionalitet til siden, bruges vanilla
+              JavaScript. Først fanges de relevante HTML elementer fra DOM’en
+              med document.querySelector og querySelectorAll, begge skal bruges
+              fordi i nogle tilfælde er det nødvendigt at ramme flere HTML
+              elementer med den samme class, og loope igennem dem med forEach.
+              Hvor det ikke er intentionen at bruge flere elemtenter på samme
+              tid, er det querySelector tilstrækkelig.
+            </p>
+            <p>
+              Den første funktions formål er at loope igennem de ulæste
+              notifikationer når buttonEl trykkes, opdatere stylingen, fjerne de
+              røde prikker ved at tilføje klassen hidden, og optarere
+              tekstindholdet i numberEl, for korrekt at afspejle mængden af
+              ulæst notifiaktioner.
+            </p>
+            <img
+              src="../assets/images/notificationsJShverEnkeltMarkAsRead.png"
+              alt="funktion til mark as read"
+            />
+            <p>
+              Den sidste del af JavaScriptet tilføjer en eventListener til hver
+              notifikation, så man har mulighed for at markere enkelte
+              notifikationer som ”læst” ved at klikke på dem. Når en
+              notifikation klikkes, ændres den styling til ”læst”, altså den blå
+              baggrundfarve og røde prik fjernes. Derefter tæller koden igen
+              hvor mange ulæste notifikationer der er, og opdaterer antallet i
+              ”notifications” i toppen af siden.
+            </p>
+            <p>
+              Padding klassen er hvad der adskiller de læste og ulæste
+              notifikationer, og gør at det er muligt at opdatere tælleren
+              korrekt. Ved at tilføje klassen padding notifikationer, bliver de
+              ikke længere talt med i ulæste notifikationer.
+              Document.querySelectorAll('.notification:not(.padding)') vælger
+              altså kun de notifikationer, som ikke har klassen padding, hvilket
+              gør at der kan holdes styr på, hvor mange notifikationer der
+              stadig er ulæste.
+            </p>
+          </div>
+          <div class="specificCaseImageContent">
+            <img
+              src="../assets/images/notificationsJSændreStylingOgAntalNotific.png"
+              alt="Funktion til at tildele styling"
+            />
+          </div>
+        </article>
+
+        <article class="specifikCaseContentContainer">
+          <div class="specificCaseTextContent">
+            <h3 class="specificCaseTitle" id="toBegrænsinger">BEGRÆNSINGER</h3>
+            <p>
+              Siden her skulle i teorien fungere som en del af en større
+              grænseflade. Dog er opgaven her begrænset til blot
+              notifikationssiden. CSS variabler er opsat, så hvis man skulle
+              udvide projektet, er det nemt at sikre konsistens på den måde.
+              Fordi siden her eksisterer alene så at sige, fører links altså
+              ikke videre til specifikke posts eller billeder i grænsefladen.
+              Derudover at opgaven begrænset til den udleverede styleguide, for
+              at slutresultatet kommer så tæt på den udleverede mockup, som
+              muligt.
+            </p>
+            <p>
+              Funktionaliteten kunne i det her tilfælde måske have været klaret
+              mere effektivt med Vue.js, og udnyttet brugen af data binding med
+              { ref }. Samtidig havde koden været en smule nemmere at
+              vedligeholde hvis projektet voksede i størrelse, fordi koden i
+              sidste ende ville være mere overskuelig.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
     <footer class="centerContent">
       <div class="logoNav">
         <a href="./index.html">
