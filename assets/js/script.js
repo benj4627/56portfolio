@@ -1,6 +1,7 @@
 let visibleAnimEl = document.querySelectorAll(".minProfilContainer, .mineEvner, .casesContainer, .kontaktId, .footerContainer");
 let scrollThreshold = 450;
 let parallaxText = document.querySelector('.h1Content');
+const lokalNav = document.querySelector('.lokalNavUl');
 
 window.addEventListener('scroll', function() {
     // fanger scroll positionen, og giver det til det valgte HTML element
@@ -26,5 +27,21 @@ function toggleClassScroll() {
   //kalder function når siden loader, for at tjekke scroll position
   toggleClassScroll();
 
+
+// Funktion til at vise lokal nav, når brugeren scroller under hero section
+function toggleLocalNav() {
+    const scrollPoint = 250; 
+
+    if (window.scrollY > scrollPoint) {
+        
+        lokalNav.classList.add('isVisible');
+    } else {
+        
+        lokalNav.classList.remove('isVisible');
+    }
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', toggleLocalNav);
 
 

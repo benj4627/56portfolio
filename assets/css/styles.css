@@ -646,3 +646,57 @@ footer i {
 .heroTextContent p {
     max-width: 50ch;
 }
+/* Lokal nav */
+
+.lokalNavUl {
+    position: fixed;
+    top: 10%;
+    z-index: 99;
+    left: -100%;
+    transition: 0.8s cubic-bezier(0.65, -0.25, 0.35, 1.2);
+}
+
+.isVisible {
+    left: -2%; 
+}
+
+.lokalNavUl ul {
+    background-color: var(--beigeBackground);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    border-radius: var(--borderRadius);
+    width: fit-content;
+}
+
+.lokalNavUl li {
+    list-style: none; 
+    color: var(--red);
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    transition: .3s ease-in-out;
+}
+
+.lokalNavUl li:hover {
+    transform: scale(115%);
+    cursor: pointer;
+    color: var(--red);
+}
+
+.lokalNavUl i {
+    font-size: 1.5rem;
+}
+
+
+
+
+.margin {
+    margin-top:40rem;
+}
