@@ -606,7 +606,7 @@ footer i {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: .2rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .heroBtnCase a {
@@ -758,4 +758,25 @@ footer i {
     border-radius: var(--borderRadius);
     width: auto;
     max-height: 50vh;
+}
+
+.heroImgCaseBlåFestival {
+    max-width: 1350;
+    margin: 0 auto;
+}
+
+.heroImgCaseBlåFestival  img {
+    width: auto;
+    height: 45vw;
+    border-radius: 20px;
+    position: absolute;
+    left: 55%;
+    top: 1%
+} 
+
+/* Blå festival */
+.specificCaseImageContentUX img {
+    border-radius: var(--borderRadius);
+    height: auto;
+    max-width: 65vw;
 }
