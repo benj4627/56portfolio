@@ -858,3 +858,39 @@ footer i {
 .arrowUpCase i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }
+
+
+
+.arrowDownCase {
+    position: absolute;
+    top: 90%;
+    left: 51%;
+    transform: translate(-95%, -51%);
+}
+
+.arrowDownCase i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowDownCase i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
+.arrowUpCaseNoti {
+    position: absolute;
+    top: 560%;
+    left: 49%;
+    transform: translate(-100%, -49%);
+}
+
+.arrowUpCaseNoti i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUpCaseNoti i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
