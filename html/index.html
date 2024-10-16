@@ -46,20 +46,24 @@
           </div>
         </div>
 
-        <!-- vue script til burger -->
+        <!-- vue script til burgermenu -->
         <script defer>
           const appNav = Vue.createApp({
             data() {
               return {
+                // Boolean variables til at tjekke, om menuen er åben eller lukket
                 isOpen: false,
               };
             },
             methods: {
+              // Skifter mellem menu åben/lukket tilstand
               toggleMenu() {
+                //// Skifter værdien af isOpen
                 this.isOpen = !this.isOpen;
               },
             },
           });
+          //Monterer appNav til DOM element <div id="appNav">
           appNav.mount("#appNav");
         </script>
       </div>
