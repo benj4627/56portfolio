@@ -870,7 +870,25 @@ footer i {
     animation: bounceUpAndDown 0.7s infinite alternate;
 }
 
+.arrowUpIndex
+{
+    position: absolute;
+    top: 100%;
+    left: 49%;
+    transform: translate(-0%, -51%);
+}
 
+.arrowUpIndex
+i {
+    color: var(--red);
+    font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.arrowUpIndex
+i:hover {
+    animation: bounceUpAndDown 0.7s infinite alternate;
+}
 
 .arrowDownCase {
     position: absolute;
@@ -891,7 +909,7 @@ footer i {
 
 .arrowUpCaseNoti {
     position: absolute;
-    top: 560%;
+    top: 620% ;
     left: 49%;
     transform: translate(-100%, -49%);
 }
