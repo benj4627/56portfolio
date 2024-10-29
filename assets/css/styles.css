@@ -156,7 +156,7 @@ button a:hover {
 }
 
 .navLinks a:hover {
-    font-size: 1.3rem;
+    transform: scale(108%);
     color: var(--red);
 }
 
