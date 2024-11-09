@@ -120,9 +120,6 @@ button a:hover {
     z-index: 1000; 
     background-color: var(--beigeBackground); 
     padding: 1rem;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    
 }
 
 .navLinks ul {
@@ -1088,6 +1085,8 @@ i:hover {
 .accordion-header.open .icon {
     transform: rotate(45deg); 
 }
+
+/* blob animation */
 
 /* side transitions */
 body {
