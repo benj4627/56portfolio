@@ -1045,7 +1045,7 @@ i:hover {
 }
 
 .accordion-item {
-    margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
 .accordion-header {
@@ -1053,9 +1053,8 @@ i:hover {
     margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.2rem;
-    letter-spacing: .2rem;
+    letter-spacing: .3rem;
     cursor: pointer;
-    text-align: left;
     transition: .2s ease-in-out;
     display: flex;
     justify-content: space-between; 
