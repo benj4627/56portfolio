@@ -48,24 +48,42 @@
         <div id="appNav"></div>
 
         <!-- vue script til burgermenu -->
-        <script defer>
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
           const appNav = Vue.createApp({
             data() {
               return {
-                // Boolean variables til at tjekke, om menuen er åben eller lukket
-                isOpen: false,
+                isOpen: false, // Boolean til at styre, om menuen er åben eller lukket
               };
             },
             methods: {
-              // Skifter mellem menu åben/lukket tilstand
               toggleMenu() {
-                //// Skifter værdien af isOpen
-                this.isOpen = !this.isOpen;
+                this.isOpen = !this.isOpen; // Skifter menuens tilstand
               },
             },
+            template: `
+              <div class="navContainer centerContent">
+                <div class="logoNav">
+                  <a href="./index.html">
+                    <img src="../assets/images/logo.png" alt="portfolio logo" />
+                  </a>
+                </div>
+        
+                <button class="burgerMenu" aria-label="Menu" @click="toggleMenu">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+        
+                <div class="navLinks" :class="{ open: isOpen }">
+                  <ul>
+                    <li><a href="./index.html#minProfilId">MIN PROFIL</a></li>
+                    <li><a href="./index.html#casesId">CASES</a></li>
+                    <li><a href="./index.html#kontaktId">KONTAKT</a></li>
+                  </ul>
+                </div>
+              </div>
+            `,
           });
-          //Monterer appNav til DOM element <div id="appNav">
-          appNav.mount("#appNav");
+          appNav.mount("#appNav"); // Monterer Vue på et DOM-element
         </script>
       </div>
 

@@ -1086,8 +1086,6 @@ i:hover {
     transform: rotate(45deg); 
 }
 
-/* blob animation */
-
 /* side transitions */
 body {
     opacity: 1;
@@ -1101,6 +1099,12 @@ body {
 
 /* Media query til mobile view */
 @media (max-width: 768px) {
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: unset;
+    }
+
     .burgerMenu {
         display: block;
     }
