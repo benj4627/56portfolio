@@ -3,13 +3,7 @@ let scrollThreshold = 250;
 let parallaxText = document.querySelector('.h1Content');
 let lokalNav = document.querySelector('.lokalNavUl');
 let visibleSlideAnimEl = document.querySelectorAll(".heroCaseContentContainer, .arrowDownCase, .heroContainer");
-let burgerButton = document.getElementById("burgerButton");
-let navLinks = document.getElementById("navLinks");
 
-// Lyt efter klik på burger og toggle "open"-klassen på navigationen
-burgerButton.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
-});
 
 //function der tildeler active class til de valgte elementer
 function delayedAnimation() {
