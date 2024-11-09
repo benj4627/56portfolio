@@ -129,7 +129,7 @@ button a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10em;
+    gap: 6em;
 }
 
 .navLinks li {
@@ -138,6 +138,8 @@ button a:hover {
 
 .navLinks a {
     position: relative; 
+    font-size: .8rem;
+    letter-spacing: .3rem;
     padding-bottom: 5px; 
     color: var(--black);
     transition: .3s ease-in-out;
@@ -1032,6 +1034,60 @@ i:hover {
 
 .arrowUpCaseTat i:hover {
     animation: bounceUpAndDown 0.7s infinite alternate;
+}
+
+/* accordion på index.html */
+
+.accordion {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
+
+.accordion-header {
+    background-color: inherit;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    cursor: pointer;
+    text-align: left;
+    transition: .2s ease-in-out;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.accordion-header:hover {
+    font-size: 1.25rem;
+    color: #701D13;
+}
+
+.accordion-content {
+    background-color: inherit;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    line-height: 3rem;
+    transition: 0.6s ease-out;
+}
+
+.accordion-item.open .accordion-content {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.accordion-header .icon {
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.accordion-header.open .icon {
+    transform: rotate(45deg); 
 }
 
 /* side transitions */
