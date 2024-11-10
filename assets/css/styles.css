@@ -1393,4 +1393,44 @@ body {
     }
 
     /* blå festival media queries */
+    .arrowUpCase i {
+        top: 100%;
+    }
+
+    .specificCaseTextContentCode p {
+        margin: 0 5%;
+    } 
+
+    .specificCaseTextContentCode img {
+        max-height: unset;
+        margin-top: 1rem;
+        max-width: 90vw;
+    }
+
+    .specificCaseImageContent img {
+        margin-top: 2rem;
+        margin-bottom: unset;
+    }
+
+    .specificCaseTextContentCode h3 {
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+
+    .specificCaseImageContentTest img,
+    .specificCaseImageContentUI img,
+    .specificCaseImageContentPersona img,
+    .specificCaseImageContentUX img {
+        max-width: 95vw;
+    }
+
+    .heroImgCaseBlåFestival img {
+        height: 60vh;
+        top: 10%;
+        left: 10%;
+    }
+
+    .heroTextContent {
+        margin-top: 500px;
+    }
 }
