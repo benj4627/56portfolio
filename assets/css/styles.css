@@ -1100,8 +1100,7 @@ body {
 /* Media query til mobile view */
 @media (max-width: 768px) {
     .accordion {
-        width: 90vw;
-        margin: unset;
+        width: 100vw;
         padding-bottom: unset;
         padding: 2rem;
     }
@@ -1191,13 +1190,6 @@ body {
 
     footer {
         padding: 1rem;
-    }
-
-    .kodeEvner, .designEvener, .researchEvner {
-        width: 100%; 
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column; 
     }
 
     .casesContainer, .kontaktContainer {
@@ -1302,11 +1294,11 @@ body {
     }
 
     .heroCaseContentContainer {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .heroTextContent h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .heroSectionTitle {
@@ -1315,6 +1307,7 @@ body {
 
     .specificCaseTextContent h3 {
         font-size: 2rem;
+        margin-top: 1rem;
         letter-spacing: .2rem;
     }
 
@@ -1411,8 +1404,8 @@ body {
     }
 
     .specificCaseImageContent img {
-        margin-top: 2rem;
-        margin-bottom: unset;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .specificCaseTextContentCode h3 {
@@ -1447,7 +1440,7 @@ body {
     }
 
     .specificCaseTextContent p {
-        margin: 0 5%;
+        margin: 1rem;
     }
 
     .specifikCaseContentContainer{
@@ -1460,5 +1453,27 @@ body {
 
     .navContainer {
         max-width: 100vw;
+    }
+
+    /* notifkationsside */
+    .heroImgCase img {
+        width: 90vw;
+        top: 10%;
+        left: 5%;
+    }
+
+    .specificCaseImageContent,
+    .specificCaseImageContentCSS {
+        flex-direction: column;
+    } 
+
+    .specificCaseTextContent img {
+        margin-left: unset;
+        margin-top: 1rem;
+    } 
+
+    .arrowUpCaseNoti {
+        left: 52%;
+        top: 607%;
     }
 }

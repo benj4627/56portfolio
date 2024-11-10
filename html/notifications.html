@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/burgerMenu.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
 
@@ -28,7 +29,13 @@
             <img src="../assets/images/logo.png" alt="portfolio logo" />
           </a>
         </div>
-        <div class="navLinks">
+
+        <!-- Burger Menu Button -->
+        <button class="burgerMenu" aria-label="Menu" id="burgerButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="navLinks" id="navLinks">
           <ul>
             <li><a href="./index.html#minProfilId">MIN PROFIL</a></li>
             <li><a href="./index.html#casesId">CASES</a></li>
@@ -48,12 +55,11 @@
             <li>JavaScript</li>
           </ul>
           <p>
-            Jeg udvikler en notifikationsside baseret på en eksisterende
-            styleguide og statisk mockup, hvilket sikrer, at den fungerer som en
-            integreret del af et større website. Gennem målrettet brug af
-            vanilla JavaScript, semantisk HTML og genanvendelig CSS opnår jeg en
-            funktionel, tilgængelig og intuitiv løsning, der er optimeret til en
-            ensartet oplevelse på desktop og mobil.
+            Jeg udvikler en notifikationsside baseret på en styleguide og
+            mockup, som integreres i et større website. Ved hjælp af vanilla
+            JavaScript, semantisk HTML og genanvendelig CSS skaber jeg en
+            funktionel og tilgængelig løsning optimeret til både desktop og
+            mobil.
           </p>
           <div class="heroBtnContainer">
             <a
@@ -117,18 +123,15 @@
           <div class="specificCaseTextContent" id="toHTML">
             <h3 class="specificCaseTitle">HTML</h3>
             <p>
-              I processen opsætter jeg et kodemiljø, hvor jeg klargør de
-              korrekte filer til typografi, HTML, CSS og JavaScript samt
-              grundlæggende styling.
+              Jeg opsætter et kodemiljø og klargør filer til typografi, HTML,
+              CSS, JavaScript og grundlæggende styling.
             </p>
             <p>
-              Jeg opretter overblik over HTML-strukturen ved at opdele
-              dokumentet i relevante tags som body, main og sections. Hvis
-              projektet var fuldt realiseret, ville det også inkludere header og
-              footer. Jeg færdiggør en section ad gangen med HTML og CSS.
-              Billederne viser korrekt semantisk HTML, der fremmer
-              webtilgængelighed, herunder alt-tekster samt title og meta
-              description i head-sektionen.
+              Jeg strukturerer HTML ved at opdele dokumentet i body, main og
+              sections. Et fuldt projekt ville også inkludere header og footer.
+              Jeg færdiggør én section ad gangen med HTML og CSS, og sikrer
+              semantisk HTML for bedre tilgængelighed, inkl. alt-tekster, title
+              og meta description i head-sektionen.
             </p>
           </div>
           <div class="specificCaseImageContent">
@@ -147,23 +150,21 @@
           <div class="specificCaseTextContent" id="toCSS">
             <h3 class="specificCaseTitle">CSS</h3>
             <p>
-              Ved opsætning af kodemiljøet klargør jeg CSS-dokumentet med et
-              reset af base styling for at undgå konflikter. Jeg opsætter
+              Jeg klargør CSS-dokumentet med en reset af base styling, opsætter
               CSS-variabler til farver, spacing og border-radius, importerer
-              fonts og anvender basal styling på typografi, billeder og knapper.
+              skrifttyper og anvender basal styling på typografi, billeder og
+              knapper.
             </p>
             <p>
-              CSS-variablerne sikrer konsistens i projektet og gør det nemt at
-              ændre farver, spacing eller border-radius i hele dokumentet, hvis
-              der skal produceres en større grænseflade. Dette bidrager til en
-              effektiv arbejdsproces gennem hele projektet.
+              CSS-variablerne sikrer konsistens og gør det nemt at ændre farver,
+              spacing og border-radius i hele projektet, hvilket bidrager til en
+              effektiv arbejdsproces.
             </p>
             <p>
-              Efter opsætning af CSS programmerer jeg en media query for korrekt
-              visning på mobil, der komprimerer containeren til en passende
-              bredde ved hjælp af flex-direction og grid. Jeg tilføjer også på
-              interaktive elementer for at forbedre brugervenligheden med
-              tydelig visuel feedback.
+              Jeg programmerer en media query for korrekt mobilvisning, der
+              justerer containerens bredde med flex-direction og grid. Jeg
+              tilføjer også visuel feedback på interaktive elementer for bedre
+              brugervenlighed.
             </p>
           </div>
           <div class="specificCaseImageContentCSS">
@@ -182,18 +183,15 @@
           <div class="specificCaseTextContent">
             <h3 class="specificCaseTitle" id="toJs">JavaScript</h3>
             <p>
-              For at tilføje funktionalitet bruger jeg vanilla JavaScript. Først
-              fanger jeg de relevante HTML-elementer fra DOM’en med
-              document.querySelector og querySelectorAll, da jeg nogle gange har
-              brug for at ramme flere elementer med samme class og loope igennem
-              dem med forEach. I tilfælde, hvor kun ét element skal bruges, er
-              querySelector tilstrækkelig.
+              Jeg bruger vanilla JavaScript til at fange relevante
+              HTML-elementer med document.querySelector og querySelectorAll,
+              hvor forEach bruges til at loope igennem flere elementer, og
+              querySelector anvendes for enkeltstående elementer.
             </p>
             <p>
-              Den første funktions formål er at loope igennem ulæste
-              notifikationer, når buttonEl trykkes, opdatere stylingen, fjerne
-              de røde prikker ved at tilføje klassen hidden og opdatere
-              tekstindholdet i numberEl for korrekt at afspejle antallet af
+              Den første funktion looper igennem ulæste notifikationer,
+              opdaterer stylingen, fjerner røde prikker med klassen "hidden" og
+              opdaterer tekstindholdet i numberEl for at vise korrekt antal
               ulæste notifikationer.
             </p>
             <img
@@ -201,10 +199,16 @@
               alt="funktion til mark as read"
             />
             <p>
-              Den sidste del af JavaScriptet tilføjer en eventListener til hver notifikation, så man kan markere dem som "læst" ved at klikke på dem. Når en notifikation klikkes, ændres stylingen til "læst" ved at fjerne den blå baggrund og den røde prik. Herefter tæller koden de ulæste notifikationer igen og opdaterer antallet i "notifications" i toppen af siden.
+              Den sidste del tilføjer en eventListener til hver notifikation, så
+              de kan markeres som "læst" ved klik. Ved klik fjernes den blå
+              baggrund og røde prik, og antallet af ulæste notifikationer
+              opdateres i toppen af siden.
             </p>
             <p>
-              Padding-klassen adskiller de læste og ulæste notifikationer og gør det muligt at opdatere tælleren korrekt. Notifikationer med klassen padding tælles ikke med som ulæste. document.querySelectorAll('.notification:not(.padding)') vælger derfor kun de notifikationer uden padding-klassen, hvilket holder styr på antallet af ulæste notifikationer.
+              Padding-klassen adskiller læste og ulæste notifikationer og sikrer
+              korrekt tælling. Notifikationer med padding tælles ikke som
+              ulæste, og ('.notification:not(.padding)') vælger kun de uden
+              padding-klassen for at opdatere tælleren.
             </p>
           </div>
           <div class="specificCaseImageContent">
@@ -219,10 +223,16 @@
           <div class="specificCaseTextContent">
             <h3 class="specificCaseTitle" id="toBegrænsinger">BEGRÆNSINGER</h3>
             <p>
-              Siden fungerer som en del af en større grænseflade, men opgaven er begrænset til notifikationssiden. CSS-variabler er opsat for at sikre nem konsistens ved en fremtidig udvidelse af projektet. Da siden eksisterer alene, fører links ikke til specifikke indlæg eller billeder. Opgaven følger også den udleverede styleguide for at nå så tæt som muligt på den givne mockup.
+              Siden er en del af en større grænseflade, men opgaven fokuserer på
+              notifikationssiden. CSS-variabler sikrer konsistens ved fremtidige
+              udvidelser. Da siden står alene, fører links ikke til indlæg eller
+              billeder. Opgaven følger styleguiden for at matche mockup'en.
             </p>
             <p>
-              Funktionaliteten kunne muligvis have været mere effektiv med Vue.js, hvor data binding med { ref } kunne udnyttes. Desuden ville koden være nemmere at vedligeholde, hvis projektet voksede, da den så ville være mere overskuelig.
+              Funktionaliteten kunne være mere effektiv med Vue.js, hvor data
+              binding med { ref } kunne udnyttes. Koden ville også være nemmere
+              at vedligeholde, hvis projektet voksede, da den ville være mere
+              overskuelig.
             </p>
           </div>
         </article>
