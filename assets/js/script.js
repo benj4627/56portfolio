@@ -4,6 +4,20 @@ let parallaxText = document.querySelector('.h1Content');
 let lokalNav = document.querySelector('.lokalNavUl');
 let visibleSlideAnimEl = document.querySelectorAll(".heroCaseContentContainer, .arrowDownCase, .heroContainer");
 
+// Funktion til at vise lokal nav, når brugeren scroller under hero section
+function toggleLocalNav() {
+  const scrollPoint = 250; 
+
+  if (window.scrollY > scrollPoint) {
+      
+      lokalNav.classList.add('isVisible');
+  } else {
+      lokalNav.classList.remove('isVisible');
+  }
+}
+
+window.addEventListener('scroll', toggleLocalNav);
+
 
 //function der tildeler active class til de valgte elementer
 function delayedAnimation() {
@@ -43,21 +57,6 @@ function toggleClassScroll() {
   };
   //kalder function når siden loader, for at tjekke scroll position
   toggleClassScroll();
-
-
-// Funktion til at vise lokal nav, når brugeren scroller under hero section
-function toggleLocalNav() {
-    const scrollPoint = 250; 
-
-    if (screenWidth > 768 && window.scrollY > scrollPoint) {
-        
-        lokalNav.classList.add('isVisible');
-    } else {
-        lokalNav.classList.remove('isVisible');
-    }
-}
-
-window.addEventListener('scroll', toggleLocalNav);
 
 //Animation til transitions
 //Vælge knapper til case studys
